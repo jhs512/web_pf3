@@ -1,0 +1,481 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+
+/* 노말라이즈 */
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-0-ch-only {
+    line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+    line-height: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 커스텀 */
+.con {
+    max-width: 1819px;
+}
+
+.con-min-width {
+    min-width: 831px;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #3f3f9f;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 26px;
+}
+
+.img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: inherit;
+    font: inherit;
+    vertical-align: baseline;
+    width: 99px;
+    height: 26px;
+}
+
+
+/* 소셜 아이콘 시작 */
+.social-links.social-links-index {
+    display: block;
+}
+
+.social-links-fixed {
+    position: fixed;
+    z-index: 10000;
+    top: 50px;
+    right: 50px;
+    font-size: 0;
+}
+
+.social-links .icon.i-w26 {
+    width: 26px;
+    height: 26px;
+    margin: 0 3px;
+    background-size: 78px auto;
+}
+
+.social-links .i-fa {
+    background-position: 0 50%;
+}
+
+.social-links .i-w26.i-insta {
+    background-position: -26px 50%;
+}
+
+.social-links .i-w26.i-nblog {
+    background-position: -52px 50%;
+}
+
+.social-links .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    background: #01fc9f url(./img/index/ico_social.png) no-repeat 0 50%;
+    border-radius: 50%;
+}
+
+/* 소셜 아이콘 끝 */
+/* 화살표 아이콘 시작 */
+.ico-arrow {
+    background-image: url(./img/index/ico_arrow.png);
+    background-position-x: 0px;
+    background-position-y: -1px;
+    width: 30px;
+    height: 30px;
+    background-color: #01fc9f;
+    border-radius: 50%;
+}
+
+.ico-arrow-down {
+    background-image: url(./img/index/ico_arrow.png);
+    background-position-x: 29px;
+    background-position-y: 1px;
+    width: 30px;
+    height: 30px;
+}
+
+/* 화살표 아이콘 끝 */
+
+/* 좌측 메뉴 박스 1 시작 */
+.menu-box-1 {
+    margin-left: 40px;
+    z-index: 10;
+}
+
+.menu-box-1::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    width: 1px;
+    left: 9px;
+    background-color: #01fc9f;
+}
+
+.menu-box-1 > .btn-nav {
+    position: absolute;
+    top: -40px;
+    left: -5px;
+}
+
+.menu-box-1 > .btn-nav.btn-nav-down {
+    top: auto;
+    bottom: -40px;
+}
+
+.menu-box-1 > ul > li > a {
+    color: #fff;
+    padding: 20px 0;
+    padding-left: 30px;
+}
+
+.menu-box-1 > ul > li:hover > a,
+.menu-box-1 > ul > li.active > a {
+    font-weight: bold;
+}
+
+.menu-box-1 > ul > li.active > a {
+    text-decoration: underline;
+}
+
+.menu-box-1 > ul > li > a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    border: 2px solid #09e59f;
+    background-color: #3f3f9f;
+}
+
+.menu-box-1 > ul > li:hover > a::before,
+.menu-box-1 > ul > li.active > a::before {
+    background-color: #09e59f;
+}
+
+/* 좌측 메뉴 박스 1 끝 */
+
+/* 슬라이드 시작 */
+.carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .con {
+    height: 100vh;
+}
+
+.carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .con > .bg-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -5;
+}
+
+.carousel-1 > .owl-carousel > .owl-stage-outer > .owl-stage > .owl-item > .item > .con > .bg-img::after {
+    content: "";
+    display: block;
+    padding-top: 36.92%;
+    z-index: -5;
+}
+
+.carousel-1 > .owl-carousel > .owl-dots {
+    position: absolute;
+    bottom: 0;
+    right: 35px;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+}
+
+
+.carousel-1 > .owl-carousel > .owl-nav {
+    margin: 0;
+}
+
+.carousel-1 > .owl-carousel > .owl-nav > [class*="owl-"],
+.carousel-1 > .owl-carousel > .owl-nav > [class*="owl-"]:hover {
+    background: transparent;
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+.carousel-1 > .owl-carousel > .owl-nav > [class*="owl-"] {
+    background: transparent;
+    text-decoration: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+    left: 150px;
+    transform: translateY(-35%);
+    opacity: 0.5;
+}
+
+.carousel-1 > .owl-carousel > .owl-nav > [class*="owl-"] > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 3rem;
+    width: 1;
+    opacity: 0.5;
+
+
+}
+
+.carousel-1 > .owl-carousel > .owl-nav > [class*="owl-"]:last-child {
+    left: auto;
+    right: 10px;
+    opacity: 0.5;
+}
+
+.carousel-1 > .owl-carousel > .owl-dots > .owl-dot > span {
+    background-color: #01fc9f;
+    opacity: 0.5;
+
+}
+
+
+.carousel-1 > .owl-carousel > .owl-dots > .owl-dot:hover > span,
+.carousel-1 > .owl-carousel > .owl-dots > .owl-dot.active > span {
+    background-color: #01fc9f;
+    opacity: 1;
+}
+
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+    width: 456.17px;
+    height: 95px;
+}
+
+.banner-subtitle {
+    display: inline-block;
+    font-size: 1.335em;
+    letter-spacing: 0.07em;
+    line-height: 1.344;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    margin: 0 0 35px;
+    margin-bottom: 35px;
+}
+
+.banner-title {
+    margin-bottom: 35px;
+    font-size: 6.9564em;
+    font-weight: 400;
+    letter-spacing: -0.07em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.color-point {
+    color: #01fc9f;
+    font-size: 97.3896px;
+    z-index: 3;
+
+}
+
+.banner-description {
+    font-size: 19.0694px;
+    color: #fff;
+    z-index: 3;
+    letter-spacing: -0.05em;
+    word-break: keep-all;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.banner {
+    font-weight: 300;
+}
+
+/* 슬라이드 끝*/
+/* 그림자 시작 */
+.bottom-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 337px;
+    pointer-events: none;
+    background-image: url(img/index/etc_1.png);
+}
+
+/* 그림자 끝 */
+/* 푸터 시작 */
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    right: 0;
+    z-index: 10;
+    padding: 25px;
+}
+
+.page-footer {
+    z-index: 15;
+}
+
+
+.page-footer-point {
+    color: #01fc9f;
+}
+
+.page-footer-10 .divider {
+    margin-bottom: 5px;
+}
+
+.page-footer > .section {
+    padding-top: 0;
+}
+
+.page-footer .divider {
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+.section {
+    padding: 50px;
+}
+
+.page-footer .tel {
+    display: inline-block;
+    margin-right: 10px;
+    line-height: 19px;
+}
+
+.page-footer .divider:last-child {
+    margin-bottom: 0;
+}
+
+.page-footer-point .tel .sign {
+    color: #3f3f9f;
+    background-color: #01fc9f;
+}
+
+.page-footer .tel .sign {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+
+/* 푸터 끝 */
